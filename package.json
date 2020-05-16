@@ -4,11 +4,15 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "build": "browserify script.js > bundle.js && live-server"
+    "build": "browserify script.js > bundle.js && live-server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.15"
-  }
+    "lodash": "^4.17.15",
+    "gh-pages": "^2.2.0",
+  },
+  "homepage": "https://Vishwa8.github.io/background_generator",
 }
