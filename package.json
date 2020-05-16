@@ -4,9 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "build": "browserify script.js > bundle.js && live-server",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "browserify script.js > bundle.js && live-server"
   },
   "author": "",
   "license": "ISC",
